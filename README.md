@@ -16,12 +16,12 @@ Panel
 
 ```mermaid
 graph TD
-    A[CSV File: Streaming Parking Data] --> B[Pathway Replay CSV]
-    B --> C[Parse Timestamp & Group by Day]
-    C --> D[Windowed Aggregation (1-day Tumbling Window)]
+    A[CSV File - Streaming Parking Data] --> B[Pathway Replay CSV]
+    B --> C[Parse Timestamp and Group by Day]
+    C --> D[Windowed Aggregation - Daily Tumbling Window]
     D --> E[Apply Smart Pricing Function]
     E --> F[Bokeh Plot via Panel]
-    F --> G[Live Dashboard / Output]
+    F --> G[Live Dashboard Output]
 ```
 
 
